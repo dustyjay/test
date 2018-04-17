@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	min-height: 450px;
+	overflow: hidden;
+}
+#bg{
+	position: relative;
+}
+img{
+	width: 100%;
+	height: auto;
+	opacity: 0.8;
+	position: absolute;
+
+}
+
+
+@font-face{
+	font-family: overpass;
+	src: url("../fonts/overpass/overpass-regular.otf");
+}
+
+@font-face{
+	font-family: ptsans;
+	src: url("../fonts/pt-sans/PTS55F.ttf");
+}
+
+@font-face{
+	font-family: ptsanscap;
+	src: url("../fonts/pt-sans/PTC55F.ttf");
+}
+
+#title{
+	position: absolute;
+	top: 10vh;
+	width: 100%;
+	color: #EDE1E1;
+	padding-left: 30px;
+	padding-right: 20px;
+}
+
+#title span{
+	font-family: overpass;
+	font-size: 60px;
+	letter-spacing: 0.15em;
+}
+
+#desc{
+	position: relative;
+	top: 350px;
+	background: rgba(51, 51, 51, 0.13);
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	min-width: 200px;
+	width: 35%;
+	font-size: 40px;
+}
+
+#desc div:first-child{
+	font-family: ptsanscap;
+	color: #eee;
+	letter-spacing: 0.05em;
+	white-space: nowrap;
+}
+
+#desc div:last-child{
+	color: #78FEFE;
+	font-family: ptsans;
+	color: #eee;
+	white-space: nowrap;
+	letter-spacing: 0.05em
+}
